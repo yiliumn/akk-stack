@@ -64,6 +64,7 @@ services:
 
   mariadb:
     restart: unless-stopped
+    image: mariadb
     build:
       context: ./containers/mariadb
       args:
